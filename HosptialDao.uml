@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.neu.dao.impl.HosptialDao</OriginalElement>
+  <nodes>
+    <node x="788.4999999999999" y="765.8181818181819">com.neu.dao.IQuestionDao</node>
+    <node x="1794.0" y="31.0">com.neu.pojo.Patient</node>
+    <node x="768.4999999999999" y="341.3181818181818">com.neu.dao.impl.QuestionDao</node>
+    <node x="239.0" y="1114.0">com.neu.pojo.Template</node>
+    <node x="185.5" y="361.0">com.neu.dao.impl.DoctorDao</node>
+    <node x="1616.0" y="1452.0">com.neu.dao.impl.TestHospitalDao</node>
+    <node x="959.0" y="1486.4117647058824">com.neu.dao.impl.RecordDao</node>
+    <node x="225.5" y="791.0">com.neu.dao.IDoctorDao</node>
+    <node x="979.0" y="1760.264705882353">com.neu.dao.IRecordDao</node>
+    <node x="993.0" y="1107.5">com.neu.pojo.DialogRecord</node>
+    <node x="1769.5" y="332.5">com.neu.dao.impl.PatientDao</node>
+    <node x="394.0" y="1929.0">com.neu.pojo.SuperManager</node>
+    <node x="226.5" y="1666.6764705882354">com.neu.dao.ITemplateDao</node>
+    <node x="186.49999999999997" y="1362.0">com.neu.dao.impl.TemplateDao</node>
+    <node x="-16.5" y="1996.5">com.neu.dao.impl.LivingRecordDao</node>
+    <node x="248.5" y="39.0">com.neu.pojo.Doctor</node>
+    <node x="827.4411764705882" y="3.705882352941188">com.neu.pojo.Question</node>
+    <node x="1508.0" y="1139.5">com.neu.dao.impl.HosptialDao</node>
+    <node x="1809.5" y="635.4285714285714">com.neu.dao.IPatientDao</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.neu.dao.ITemplateDao" target="com.neu.pojo.Template" relationship="DEPENDENCY">
+      <point x="0.0" y="-74.5" />
+      <point x="380.0" y="1695.7983193277307" />
+      <point x="601.09243697479" y="1695.7983193277307" />
+      <point x="601.09243697479" y="1252.4117647058824" />
+      <point x="340.0" y="1252.4117647058824" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.TemplateDao" target="com.neu.pojo.Template" relationship="DEPENDENCY">
+      <point x="0.0" y="-98.0" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.TemplateDao" target="com.neu.dao.ITemplateDao" relationship="TO_ONE">
+      <point x="20.0" y="-98.0" />
+      <point x="-20.0" y="74.5" />
+    </edge>
+    <edge source="com.neu.pojo.Question" target="com.neu.pojo.Question" relationship="DEPENDENCY">
+      <point x="0.0" y="-97.5" />
+      <point x="932.9411764705882" y="-18.794117647058812" />
+      <point x="1072.9411764705883" y="-18.794117647058812" />
+      <point x="1072.9411764705883" y="101.20588235294119" />
+      <point x="105.5" y="0.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.DoctorDao" target="com.neu.pojo.Doctor" relationship="TO_MANY">
+      <point x="60.0" y="-120.5" />
+      <point x="400.0" y="256.42857142857144" />
+      <point x="360.0" y="256.42857142857144" />
+      <point x="20.0" y="121.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.RecordDao" target="com.neu.dao.IRecordDao" relationship="REALIZATION">
+      <point x="40.0" y="-63.0" />
+      <point x="1120.0" y="1594.1176470588236" />
+      <point x="1100.0" y="1594.1176470588236" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.TestHospitalDao" target="com.neu.dao.impl.HosptialDao" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="120.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.QuestionDao" target="com.neu.dao.impl.QuestionDao" relationship="CREATE">
+      <point x="151.5" y="0.0" />
+      <point x="1100.0" y="461.8181818181818" />
+      <point x="1100.0" y="418.1818181818183" />
+      <point x="919.9999999999999" y="418.1818181818183" />
+      <point x="0.0" y="120.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.DoctorDao" target="com.neu.dao.impl.DoctorDao" relationship="CREATE">
+      <point x="154.5" y="0.0" />
+      <point x="524.2857142857143" y="481.5" />
+      <point x="524.2857142857143" y="543.9285714285714" />
+      <point x="340.0" y="543.9285714285714" />
+      <point x="0.0" y="120.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.DoctorDao" target="com.neu.dao.IDoctorDao" relationship="TO_ONE">
+      <point x="20.0" y="-120.5" />
+      <point x="-20.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.QuestionDao" target="com.neu.pojo.Question" relationship="DEPENDENCY">
+      <point x="0.0" y="-120.5" />
+      <point x="932.9411764705882" y="341.3181818181818" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.DoctorDao" target="com.neu.dao.IDoctorDao" relationship="REALIZATION">
+      <point x="40.0" y="-120.5" />
+      <point x="380.0" y="513.4285714285714" />
+      <point x="434.0993788819876" y="513.4285714285714" />
+      <point x="434.0993788819876" y="837.4285714285714" />
+      <point x="380.0" y="837.4285714285714" />
+      <point x="0.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.PatientDao" target="com.neu.dao.impl.PatientDao" relationship="CREATE">
+      <point x="110.5" y="0.0" />
+      <point x="2035.7142857142858" y="430.0" />
+      <point x="2035.7142857142858" y="485.7142857142858" />
+      <point x="1880.0" y="485.7142857142858" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.QuestionDao" target="com.neu.pojo.Question" relationship="TO_MANY">
+      <point x="60.0" y="-120.5" />
+      <point x="979.9999999999999" y="326.95187165775405" />
+      <point x="981.8181818181818" y="326.95187165775405" />
+      <point x="981.8181818181818" y="181.22058823529414" />
+      <point x="952.9411764705882" y="181.22058823529414" />
+      <point x="20.0" y="97.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.RecordDao" target="com.neu.pojo.DialogRecord" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="0.0" y="132.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.RecordDao" target="com.neu.pojo.DialogRecord" relationship="TO_MANY">
+      <point x="60.0" y="-63.0" />
+      <point x="1140.0" y="1365.8823529411766" />
+      <point x="1100.0" y="1365.8823529411766" />
+      <point x="20.0" y="132.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.TemplateDao" target="com.neu.pojo.Template" relationship="TO_MANY">
+      <point x="60.0" y="-98.0" />
+      <point x="400.0" y="1286.0" />
+      <point x="20.0" y="86.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.RecordDao" target="com.neu.dao.impl.RecordDao" relationship="CREATE">
+      <point x="121.0" y="0.0" />
+      <point x="1240.0" y="1549.4117647058824" />
+      <point x="1240.0" y="1600.0000000000002" />
+      <point x="1080.0" y="1600.0000000000002" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.LivingRecordDao" target="com.neu.dao.impl.LivingRecordDao" relationship="TO_ONE">
+      <point x="20.0" y="-63.5" />
+      <point x="140.0" y="1960.0" />
+      <point x="300.0" y="1960.0" />
+      <point x="300.0" y="2040.0" />
+      <point x="136.5" y="-20.0" />
+    </edge>
+    <edge source="com.neu.dao.IRecordDao" target="com.neu.pojo.DialogRecord" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.5" />
+      <point x="1100.0" y="1804.8382352941178" />
+      <point x="1291.7647058823532" y="1804.8382352941178" />
+      <point x="1291.7647058823532" y="1336.4705882352941" />
+      <point x="1080.0" y="1336.4705882352941" />
+      <point x="0.0" y="132.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.TemplateDao" target="com.neu.dao.ITemplateDao" relationship="REALIZATION">
+      <point x="40.0" y="-98.0" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.DoctorDao" target="com.neu.pojo.Doctor" relationship="DEPENDENCY">
+      <point x="0.0" y="-120.5" />
+      <point x="0.0" y="121.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.HosptialDao" target="com.neu.dao.impl.HosptialDao" relationship="TO_ONE">
+      <point x="20.0" y="-120.5" />
+      <point x="1720.0" y="1100.0" />
+      <point x="1940.0" y="1100.0" />
+      <point x="1940.0" y="1240.0" />
+      <point x="192.0" y="-20.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.TemplateDao" target="com.neu.dao.impl.TemplateDao" relationship="CREATE">
+      <point x="153.5" y="0.0" />
+      <point x="520.0" y="1460.0" />
+      <point x="520.0" y="1517.6470588235293" />
+      <point x="340.0" y="1517.6470588235293" />
+      <point x="0.0" y="98.0" />
+    </edge>
+    <edge source="com.neu.pojo.Doctor" target="com.neu.pojo.Doctor" relationship="DEPENDENCY">
+      <point x="0.0" y="-121.0" />
+      <point x="340.0" y="0.0" />
+      <point x="460.0" y="0.0" />
+      <point x="460.0" y="160.0" />
+      <point x="91.5" y="0.0" />
+    </edge>
+    <edge source="com.neu.dao.IDoctorDao" target="com.neu.pojo.Doctor" relationship="DEPENDENCY">
+      <point x="0.0" y="-109.0" />
+      <point x="380.0" y="888.7142857142858" />
+      <point x="640.0" y="888.7142857142858" />
+      <point x="640.0" y="246.71428571428567" />
+      <point x="431.5" y="246.71428571428567" />
+      <point x="91.5" y="121.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.HosptialDao" target="com.neu.dao.impl.HosptialDao" relationship="CREATE">
+      <point x="0.0" y="-120.5" />
+      <point x="1700.0" y="1080.0" />
+      <point x="1960.0" y="1080.0" />
+      <point x="1960.0" y="1260.0" />
+      <point x="192.0" y="0.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.PatientDao" target="com.neu.dao.IPatientDao" relationship="REALIZATION">
+      <point x="40.0" y="-97.5" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.PatientDao" target="com.neu.dao.IPatientDao" relationship="TO_ONE">
+      <point x="20.0" y="-97.5" />
+      <point x="-20.0" y="86.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.LivingRecordDao" target="com.neu.dao.impl.LivingRecordDao" relationship="CREATE">
+      <point x="0.0" y="-63.5" />
+      <point x="120.0" y="1940.0" />
+      <point x="320.0" y="1940.0" />
+      <point x="320.0" y="2060.0" />
+      <point x="136.5" y="0.0" />
+    </edge>
+    <edge source="com.neu.pojo.Patient" target="com.neu.pojo.Patient" relationship="DEPENDENCY">
+      <point x="0.0" y="-109.0" />
+      <point x="1880.0" y="0.0" />
+      <point x="2000.0" y="0.0" />
+      <point x="2000.0" y="140.0" />
+      <point x="86.0" y="0.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.QuestionDao" target="com.neu.dao.IQuestionDao" relationship="REALIZATION">
+      <point x="40.0" y="-120.5" />
+      <point x="959.9999999999999" y="580.0" />
+      <point x="939.9999999999999" y="580.0" />
+      <point x="0.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.dao.IPatientDao" target="com.neu.pojo.Patient" relationship="DEPENDENCY">
+      <point x="0.0" y="-86.0" />
+      <point x="1920.0" y="320.0" />
+      <point x="1880.0" y="320.0" />
+      <point x="0.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.PatientDao" target="com.neu.pojo.Patient" relationship="DEPENDENCY">
+      <point x="0.0" y="-97.5" />
+      <point x="0.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.pojo.Template" target="com.neu.pojo.Template" relationship="DEPENDENCY">
+      <point x="0.0" y="-86.0" />
+      <point x="340.0" y="1080.0" />
+      <point x="480.0" y="1080.0" />
+      <point x="480.0" y="1200.0" />
+      <point x="101.0" y="0.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.RecordDao" target="com.neu.dao.IRecordDao" relationship="TO_ONE">
+      <point x="20.0" y="-63.0" />
+      <point x="1100.0" y="1600.0" />
+      <point x="1080.0" y="1600.0" />
+      <point x="-20.0" y="51.5" />
+    </edge>
+    <edge source="com.neu.dao.IQuestionDao" target="com.neu.pojo.Question" relationship="DEPENDENCY">
+      <point x="0.0" y="-109.0" />
+      <point x="939.9999999999999" y="482.26203208556154" />
+      <point x="932.9411764705882" y="482.26203208556154" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="com.neu.dao.impl.QuestionDao" target="com.neu.dao.IQuestionDao" relationship="TO_ONE">
+      <point x="20.0" y="-120.5" />
+      <point x="939.9999999999999" y="560.0" />
+      <point x="919.9999999999999" y="560.0" />
+      <point x="-20.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.dao.impl.PatientDao" target="com.neu.pojo.Patient" relationship="TO_MANY">
+      <point x="60.0" y="-97.5" />
+      <point x="1940.0" y="249.0" />
+      <point x="20.0" y="109.0" />
+    </edge>
+    <edge source="com.neu.pojo.DialogRecord" target="com.neu.pojo.DialogRecord" relationship="DEPENDENCY">
+      <point x="0.0" y="-132.5" />
+      <point x="1080.0" y="1080.0" />
+      <point x="1200.0" y="1080.0" />
+      <point x="1200.0" y="1240.0" />
+      <point x="87.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Directed (Bottom to Top)" zoom="0.8500000000000001" showDependencies="true" x="1757.5798319327732" y="93.35294117647055" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
